@@ -26,7 +26,30 @@ namespace websiteLogin
             websiteEntities1 vt = new websiteEntities1();
             vt.personel.Add(yeniKayıt);
             int sonuc = vt.SaveChanges();
-          
+            if (sonuc > 0)
+            {
+
+                lblSonuç.Text = "kayıt yapıldı!!";
+                temizle();
+
+            }
+            else
+                lblSonuç.Text = "Kayıt Başarısız!!";
+
+        }
+
+        public void temizle()
+        {
+            TxtTc.Text = "";
+            Txtİsim.Text = "";
+            TxtSoyisim.Text = "";
+            TxtTel.Text = "";
+            TxtDogumYer.Text = "";
+            RbErkek.Checked = false;
+            RbKadın.Checked = true;
+            Calendar1.SelectedDate = DateTime.Now;
+
         }
     }
 }
+        

@@ -6,7 +6,7 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
-    <style type="text/css">
+     <style type="text/css">
         .auto-style1 {
             width: 87%;
             height: 392px;
@@ -17,10 +17,36 @@
         .auto-style3 {
             width: 311px;
         }
+        .auto-style4 {
+            width: 875px;
+            height: 449px;
+        }
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+        }
+        .navbar a {
+            float: left;
+            font-size: 16px;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
     </style>
 </head>
-<body>
-    <form id="form1" runat="server">
+<body style="width: 882px; height: 618px">
+    <div class="navbar">
+        <a href="#">Ekle</a>
+        <a href="#">Sil</a>
+        <a href="#">Güncelle</a>
+        <a href="Listele.aspx">Listele</a>
+    </div>
+    <form id="form1" runat="server" class="auto-style4">
         <div>
         </div>
         <table class="auto-style1">
@@ -29,7 +55,7 @@
                     <asp:Label ID="Label1" runat="server" Text="Tc No :"></asp:Label>
                 </td>
                 <td class="auto-style3">
-                    <asp:TextBox ID="TxtTc" runat="server" ></asp:TextBox>
+                    <asp:TextBox ID="TxtTc" runat="server" MaxLength="11" ></asp:TextBox>
                 </td>
                 <td>&nbsp;</td>
             </tr>
