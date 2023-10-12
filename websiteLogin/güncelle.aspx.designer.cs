@@ -11,7 +11,7 @@ namespace websiteLogin
 {
 
 
-    public partial class Listele
+    public partial class güncelle
     {
 
         /// <summary>
@@ -24,12 +24,12 @@ namespace websiteLogin
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// GridViewData denetimi.
+        /// Button1 denetimi.
         /// </summary>
         /// <remarks>
         /// Otomatik olarak oluşturulan alan.
         /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridViewData;
+        protected global::System.Web.UI.WebControls.Button Button1;
     }
 }

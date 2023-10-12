@@ -41,11 +41,11 @@
 </head>
 <body style="width: 882px; height: 618px">
     <div class="navbar">
-        <a href="#">Ekle</a>
-        <a href="#">Sil</a>
-        <a href="#">Güncelle</a>
-        <a href="Listele.aspx">Listele</a>
-    </div>
+    <a href="WebForm1.aspx">Ekle</a>
+    <a href="sil.aspx">Sil</a>
+    <a href="güncelle.aspx">Güncelle</a>
+    <a href="Listele.aspx">Listele</a>
+</div>
     <form id="form1" runat="server" class="auto-style4">
         <div>
         </div>

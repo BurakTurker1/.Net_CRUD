@@ -14,13 +14,6 @@
         .auto-style2 {
             width: 129px;
         }
-        .auto-style3 {
-            width: 311px;
-        }
-        .auto-style4 {
-            width: 875px;
-            height: 449px;
-        }
         .navbar {
             background-color: #333;
             overflow: hidden;
@@ -37,15 +30,22 @@
             background-color: #ddd;
             color: black;
         }
+             .auto-style3 {
+                 width: 129px;
+                 height: 26px;
+             }
+             .auto-style4 {
+                 height: 26px;
+             }
     </style>
 </head>
 <body style="width: 882px; height: 618px">
     <div class="navbar">
-        <a href="WebForm1.aspx">Ekle</a>
-        <a href="#">Sil</a>
-        <a href="#">Güncelle</a>
-        <a href="Listele.aspx">Listele</a>
-    </div>
+    <a href="WebForm1.aspx">Ekle</a>
+    <a href="sil.aspx">Sil</a>
+    <a href="güncelle.aspx">Güncelle</a>
+    <a href="Listele.aspx">Listele</a>
+</div>
     <form id="form1" runat="server">
         <div>
         </div>
@@ -57,10 +57,9 @@
                 </td>
             </tr>
             <tr>
-                <td class="auto-style2">
-                    <asp:Button ID="Button1" runat="server" Height="57px" OnClick="Button1_Click" Text="Listele" Width="124px" />
+                <td class="auto-style3">
                 </td>
-                <td>&nbsp;</td>
+                <td class="auto-style4"></td>
             </tr>
         </table>
     </form>
