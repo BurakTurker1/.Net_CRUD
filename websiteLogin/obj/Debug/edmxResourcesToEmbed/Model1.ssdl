@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="websiteModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="personel">
+    <Key>
+      <PropertyRef Name="pID" />
+    </Key>
+    <Property Name="pID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="pTc" Type="nchar" MaxLength="11" />
+    <Property Name="pAd" Type="nchar" MaxLength="10" />
+    <Property Name="pSoyad" Type="nchar" MaxLength="10" />
+    <Property Name="pTel" Type="nchar" MaxLength="11" />
+    <Property Name="pCinsiyet" Type="nchar" MaxLength="10" />
+    <Property Name="pDogumYeri" Type="nchar" MaxLength="15" />
+    <Property Name="pDogumTarih" Type="date" />
+  </EntityType>
+  <EntityContainer Name="websiteModelStoreContainer">
+    <EntitySet Name="personel" EntityType="Self.personel" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

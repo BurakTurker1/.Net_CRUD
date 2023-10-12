@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="websiteModelStoreContainer" CdmEntityContainer="websiteEntities1">
+    <EntitySetMapping Name="personel">
+      <EntityTypeMapping TypeName="websiteModel.personel">
+        <MappingFragment StoreEntitySet="personel">
+          <ScalarProperty Name="pID" ColumnName="pID" />
+          <ScalarProperty Name="pTc" ColumnName="pTc" />
+          <ScalarProperty Name="pAd" ColumnName="pAd" />
+          <ScalarProperty Name="pSoyad" ColumnName="pSoyad" />
+          <ScalarProperty Name="pTel" ColumnName="pTel" />
+          <ScalarProperty Name="pCinsiyet" ColumnName="pCinsiyet" />
+          <ScalarProperty Name="pDogumYeri" ColumnName="pDogumYeri" />
+          <ScalarProperty Name="pDogumTarih" ColumnName="pDogumTarih" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
